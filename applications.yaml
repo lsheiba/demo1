@@ -1,26 +1,4 @@
 - charts: []
   name: tf2
-- charts:
-  - clusters:
-    - demo-cluster-1
-    configuration:
-      values:
-        cpu:
-          limits: 100m
-          requests: 25m
-        image:
-          Name: lsheiba/tensorflow-ls-devel
-          Tag: latest
-        memory:
-          limits: 2048Mi
-          requests: 64Mi
-        persistence:
-          accessMode: ReadWriteOnce
-          enabled: true
-          size: 1Gi
-        replicas: 1
-        serviceType: LoadBalancer
-    name: tensorflow-devel-no-token
-    src: https://github.com/lsheiba/tensorflow-devel-no-token/
-    version: 1.0.0
+- charts: []
   name: tf-devel
